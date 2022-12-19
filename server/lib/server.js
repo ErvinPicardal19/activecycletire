@@ -20,7 +20,7 @@ class Server {
          this.httpServer = createServer(this.app);
          this.io = new socket.Server(this.httpServer, {
             cors: {
-               origin: "http://localhost:5500"
+               origin: "https://activecycletire.onrender.com"
             },
             
          })

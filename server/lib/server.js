@@ -39,7 +39,7 @@ class Server {
             employees: '/api/v1/employees',
             schedule: '/api/v1/schedule',
             dashboard: '/api/v1/dashboard',
-            react_routes: /^\/(customers)?(inventory)?(orders)?$/g
+            react_routes: /^\/(customers)?(inventory)?(orders)?(employees)?$/g
          }
          this.verifyJWT = require('./middleware/verifyJWT.js')
          Server.instance = this;
